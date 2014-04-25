@@ -1,0 +1,27 @@
+2007-05-18 Jacob Gabrielson <jacobg23@pobox.com>
+
+	* added wprintw, overlay and overwrite
+
+2004-09-04  Julian Stecklina  <der_julian@web.de>
+
+	* variables.lisp: 
+		Exported variable names.
+
+	* package.lisp (def): 
+		Changed macro to also export the function names.
+
+	* getyx.lisp: 
+		Made get*yx macros always free their foreign structure and
+		added get-*yx functions that return the coordinates as
+		multiple values instead of setf'ing them. Also unbreak the
+		macros and export all the names.
+
+	* glue.lisp: 
+		Renamed to lisp-glue.lisp, because of name conflict
+		with glue.c. 
+
+2004-03-08 Marcelo Ramos <mramos@montevideo.com.uy>
+
+	Version 0.1 (initial release)
+
+	* initial version

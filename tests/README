@@ -1,0 +1,4 @@
+If you want to run the test "foo.lisp":
+
+	(load #p"foo.lisp")
+	(cl-ncurses::foo)

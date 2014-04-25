@@ -1,0 +1,17 @@
+CL-Ncurses is a Ncurses interface for Common Lisp on Unix-platforms. It is 
+licensed under a MIT-style license. CL-Ncurses uses UFFI for foreign bindings
+and it is developed with SBCL on Debian GNU/Linux.
+
+To use cl-ncurses:
+
+ (require :uffi)
+ (asdf:oos 'asdf:load-op 'cl-ncurses)
+
+The organization of files corresponds to ncurses manual pages:
+eg. functions described in initscr(3) are dealt with in initscr.lisp.
+
+Types and convenience macros reside in package.lisp.
+Ncurses's constants reside in constants.lisp.
+Ncurses's variables reside in variables.lisp.
+
+There are some tests in the "test" directory.
